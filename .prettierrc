@@ -1,0 +1,26 @@
+{
+  "printWidth": 130,
+  "trailingComma": "es5",
+  "tabWidth": 2,
+  "semi": false,
+  "singleQuote": true,
+  "jsxSingleQuote": false,
+  "plugins": ["@trivago/prettier-plugin-sort-imports", "prettier-plugin-sh"],
+  "importOrder": [
+    "^react$",
+    "<THIRD_PARTY_MODULES>",
+    "^@/constants/",
+    "^@/types/",
+    "^@/utils/",
+    "^@/hooks/",
+    "^@/services/",
+    "^@/components/",
+    "^@/containers/",
+    "^@/assets/",
+    "^@/(?!assets/|.*\\.(css|scss)$).*",
+    "^@/.*\\.(css|scss)$",
+    "^[../]",
+    "^[./]"
+  ],
+  "importOrderCaseInsensitive": true
+}
