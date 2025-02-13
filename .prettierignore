@@ -1,6 +1,2 @@
-.husky/
-public/
 dist/
 coverage/
-.env
-.env.*
