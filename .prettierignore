@@ -2,3 +2,5 @@
 public/
 dist/
 coverage/
+.env
+.env.*
