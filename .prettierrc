@@ -1,11 +1,9 @@
 {
   "printWidth": 130,
   "trailingComma": "es5",
-  "tabWidth": 2,
   "semi": false,
   "singleQuote": true,
-  "jsxSingleQuote": false,
-  "plugins": ["@trivago/prettier-plugin-sort-imports", "prettier-plugin-sh"],
+  "plugins": ["@trivago/prettier-plugin-sort-imports"],
   "importOrder": [
     "^react$",
     "<THIRD_PARTY_MODULES>",
