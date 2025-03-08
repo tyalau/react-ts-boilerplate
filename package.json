@@ -13,7 +13,7 @@
     "lint": "eslint .",
     "prettier:fix": "prettier --write \"**/*.{js,jsx,mjs,ts,tsx,css,scss,md,json}\"",
     "preview": "vite preview",
-    "prepare": "husky || true",
+    "prepare": "husky",
     "test": "vitest --run --passWithNoTests",
     "test:watch": "vitest",
     "test:ui": "vitest --ui"
