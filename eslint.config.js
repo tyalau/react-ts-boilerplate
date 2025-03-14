@@ -26,36 +26,9 @@ export default tseslint.config(
     rules: {
       ...reactHooks.configs.recommended.rules,
       'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
+
       'array-callback-return': 'error',
-      'brace-style': [
-        'error',
-        '1tbs',
-        {
-          allowSingleLine: true,
-        },
-      ],
-      'comma-dangle': [
-        'error',
-        {
-          arrays: 'always-multiline',
-          objects: 'always-multiline',
-          imports: 'always-multiline',
-          exports: 'always-multiline',
-          functions: 'never',
-        },
-      ],
       'dot-notation': 'error',
-      indent: 0,
-      'max-len': [
-        'error',
-        {
-          code: 130,
-          ignoreStrings: true,
-          ignoreTemplateLiterals: true,
-          ignoreComments: true,
-        },
-      ],
-      'multiline-ternary': 0,
       'no-console': [
         'warn',
         {
@@ -78,8 +51,6 @@ export default tseslint.config(
       'no-unneeded-ternary': 'error',
       'no-unused-expressions': 'error',
       'object-shorthand': 'error',
-      'operator-linebreak': 0,
-      'space-in-parens': 0,
       'prefer-arrow-callback': 'error',
       'prefer-destructuring': [
         'error',
@@ -89,14 +60,6 @@ export default tseslint.config(
       ],
       'prefer-regex-literals': 'error',
       'prefer-template': 'error',
-      'quote-props': ['error', 'as-needed'],
-      quotes: [
-        'error',
-        'single',
-        {
-          avoidEscape: true,
-        },
-      ],
 
       'react/button-has-type': 'error',
       'react/jsx-boolean-value': 'error',
