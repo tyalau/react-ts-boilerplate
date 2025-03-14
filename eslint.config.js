@@ -25,10 +25,12 @@ export default tseslint.config(
     },
     rules: {
       ...reactHooks.configs.recommended.rules,
+      ...react.configs['jsx-runtime'].rules,
       'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
 
       'array-callback-return': 'error',
       'dot-notation': 'error',
+      'func-style': ['error', 'expression'],
       'no-console': [
         'warn',
         {
@@ -65,7 +67,6 @@ export default tseslint.config(
       'react/jsx-boolean-value': 'error',
       'react/jsx-no-useless-fragment': 'error',
       'react/no-array-index-key': 'error',
-      'react/react-in-jsx-scope': 0,
       'react/self-closing-comp': 'error',
       'react/state-in-constructor': 'error',
     },
