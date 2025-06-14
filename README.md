@@ -22,8 +22,8 @@ This is a boilerplate for developing React applications using TypeScript and Vit
 
 Ensure you have the following installed on your machine:
 
-- **Node.js** (>= v20.15)
-- **PNPM** (>= v10.3.0)
+- **Node.js** (>= v22.16.0)
+- **PNPM** (>= v10.6.3)
 
 ## Getting Started
 
