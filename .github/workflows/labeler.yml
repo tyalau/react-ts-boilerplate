@@ -1,7 +1,7 @@
 name: "Pull Request Labeler"
 on:
   pull_request:
-      types: [opened, synchronize, reopened]
+    types: [opened, synchronize, reopened]
 
 jobs:
   labeler:
@@ -10,7 +10,14 @@ jobs:
       pull-requests: write
     runs-on: ubuntu-latest
     steps:
-    - name: Label Dev Ops
-      uses: actions/labeler@v6
-      with:
-        sync-labels: true
+      - name: Checkout central config repository
+        uses: actions/checkout@v5
+        with:
+          repository: tyalau/.github
+          path: .central-config
+
+      - name: Apply labels
+        uses: actions/labeler@v6
+        with:
+          configuration-path: '.central-config/.github/labeler.yml'
+          sync-labels: true
