@@ -22,7 +22,7 @@ This is a boilerplate for developing React applications using TypeScript and Vit
 
 Ensure you have the following installed on your machine:
 
-- **Node.js** (>= v22.16.0)
+- **Node.js** (>= v24.14.1)
 - **PNPM** (>= v10.6.3)
 
 ## Getting Started
@@ -94,5 +94,5 @@ If the template is updated, apply the changes using the following commands:
 ```sh
 git remote add template <template-repo-url>
 git fetch template
-git merge template/main --allow-unrelated-histories
+git cherry-pick <template-commit-id>
 ```
